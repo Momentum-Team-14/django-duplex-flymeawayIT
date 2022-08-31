@@ -3,17 +3,13 @@
 <div>
     <h1>Flashcards is a way to Learn</h1> 
     <ul> 
-
-
-
     </ul>
-
-
-
 </div>
 
 
 
 {% block content %} 
-
+    {% for flashcard in flashcards %} 
+        {{ flashcard }}
+    {% endfor %}
 {% endblock %} 

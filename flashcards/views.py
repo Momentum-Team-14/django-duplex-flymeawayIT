@@ -1,10 +1,10 @@
 from django.shortcuts import render
-from .models import Flashcards, Index, Card
+from .models import Flashcard
 
 
-def index(request):
-    index = Index.objects.all()
-    return render(request, 'index.html', {'index': index})
+def flash_cards(request):
+    flashcards = Flashcard.objects.all()
+    return render(request, 'flashcards/flash_cards.html', {'flashcards':flashcards})
 
 
 # def card_add(request):
@@ -16,7 +16,3 @@ def index(request):
 #     flashcards = Flashcards.objects.all()
 #     return render(request, 'flashcards/cards_list.html', {'flashcards':flashcards})
 
-
-# def flash_cards(request):
-#     flashcards = Flashcards.objects.all()
-#     return render(request, 'flashcards/flash_cards.html', {'flashcards':flashcards})

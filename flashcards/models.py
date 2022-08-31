@@ -17,12 +17,8 @@ class User(AbstractUser):
     #     db_table = 'auth_user'
 
 
-# class Flashcards(models.Model):
-#     pass
-
-
-# class Card(models.Model):
-#     pass
+class Flashcard(models.Model):
+    pass
 
 
 # class Deck(models.Model):
