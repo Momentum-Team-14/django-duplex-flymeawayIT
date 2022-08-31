@@ -1,5 +1,5 @@
 from django.shortcuts import render
-# from .models import flashcards
+from .models import flashcards
 
 
 def index(request):

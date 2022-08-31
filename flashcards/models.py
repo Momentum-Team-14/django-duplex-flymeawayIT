@@ -1,9 +1,12 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser
+# from django.contrib.auth.models import flashcards.Users
 
 
 class User(AbstractUser):
-    pass
+    pass 
+    # class Meta:
+    #     db_table = 'auth_user'
 
 
 class Flashcards(models.Model):
