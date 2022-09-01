@@ -15,4 +15,3 @@
 # def cards_list(request):
 #     flashcards = Flashcards.objects.all()
 #     return render(request, 'flashcards/cards_list.html', {'flashcards':flashcards})
-
