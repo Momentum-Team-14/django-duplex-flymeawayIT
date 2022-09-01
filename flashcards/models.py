@@ -21,5 +21,5 @@ class Flashcard(models.Model):
     pass
 
 
-# class Deck(models.Model):
-#     pass
+class Deck(models.Model):
+    pass
