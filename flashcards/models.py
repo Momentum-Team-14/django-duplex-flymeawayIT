@@ -1,7 +1,12 @@
 from django.db import models
+from django.contrib.auth.models import AbstractUser as BaseUser
 
 NUM_BOXES = 5
 BOXES = range(1, NUM_BOXES + 1)
+
+
+class User(BaseUser):
+    pass
 
 
 class Card(models.Model):
