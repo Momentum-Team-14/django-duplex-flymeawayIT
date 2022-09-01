@@ -1,10 +1,10 @@
-from django.shortcuts import render
-from .models import Flashcard
+# from django.shortcuts import render
+# from .models import Flashcard
 
 
-def flash_cards(request):
-    flashcards = Flashcard.objects.all()
-    return render(request, 'flashcards/flash_cards.html', {'flashcards':flashcards})
+# def flash_cards(request):
+#     flashcards = Flashcard.objects.all()
+#     return render(request, 'flashcards/flash_cards.html', {'flashcards':flashcards})
 
 
 # def card_add(request):

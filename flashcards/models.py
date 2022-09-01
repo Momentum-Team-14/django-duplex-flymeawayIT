@@ -1,25 +1,17 @@
-from django.db import models
-from django.contrib.auth.models import AbstractUser
-# from django.contrib.auth.models import flashcards.Users
+# from django.db import models
+
+# NUM_BOXES = 5
+# BOXES = range(1, NUM_BOXES + 1)
 
 
-class Base(models.Model):
-    pass
+# class Card(models.Model):
+#     question = models.CharField(max_length=100)
+#     answer = models.CharField(max_length=100)
+#     box = models.IntegerField(
+#         choices=zip(BOXES, BOXES),
+#         default=BOXES[0],
+#         )
+#     date_created = models.DateTimeField(auto_new_add=True)
 
-
-class Index(models.Model):
-    pass
-
-
-class User(AbstractUser):
-    pass 
-    # class Meta:
-    #     db_table = 'auth_user'
-
-
-class Flashcard(models.Model):
-    pass
-
-
-class Deck(models.Model):
-    pass
+#     def __str__(self):
+#         return self.question

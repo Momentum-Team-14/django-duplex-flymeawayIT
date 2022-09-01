@@ -38,9 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'flashcards',
-    # 'cards.app.CardsConfig',
-    
+    'flashcards.apps.FlashcardsConfig',
 ]
 
 MIDDLEWARE = [
@@ -127,5 +125,5 @@ STATICFILES_DIR = [BASE_DIR / 'static']
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-AUTH_USER_MODEL = 'flashcards.User'
-LOGIN_URL_REDIRECT = '/'
+# AUTH_USER_MODEL = 'flashcards.User'
+# LOGIN_URL_REDIRECT = '/'
