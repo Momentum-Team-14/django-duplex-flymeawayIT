@@ -1,6 +1,11 @@
+from django.views.generic import (ListView)
+from .models import Card
 # from django.shortcuts import render
-# from .models import Flashcard
 
+
+class CardListView(ListView):
+    model = Card
+    queryset = Card.objects.all().order_by("box", "-date_created")
 
 # def flash_cards(request):
 #     flashcards = Flashcard.objects.all()
