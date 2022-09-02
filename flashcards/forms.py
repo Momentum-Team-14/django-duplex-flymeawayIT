@@ -1,14 +1,5 @@
 from django import forms
-from .models import Decks, Cards, Deck, Card
-
-
-class DeckForm(forms.ModelForm):
-    class Meta:
-        model = Deck
-        fields = (
-            'Tennis',
-            'Music',
-        )
+from .models import Card
 
 
 class CardForm(forms.ModelForm):
@@ -17,3 +8,12 @@ class CardForm(forms.ModelForm):
         fields = (
             'name',
         )
+
+
+# class DeckForm(forms.ModelForm):
+#     class Meta:
+#         model = Deck
+#         fields = (
+#             'Tennis',
+#             'Music',
+#         )
