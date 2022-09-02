@@ -6,6 +6,7 @@ from .models import Card
 from django.shortcuts import render
 
 
+# changed CardListView from RP tutorial in Line 9 to ListView to resolve CardListView undefined
 class BoxView(ListView):
     template_name = 'flashcards/box.html'
 
