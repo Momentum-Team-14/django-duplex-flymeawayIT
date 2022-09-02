@@ -5,15 +5,13 @@
     <h2>
         All Cards
     </h2>
-    <a href='{% url 'card-create' %}' role='button'>
+    <a href='{% url "card-create" %}' role='button'>
         Create New card
     </a>
     {% for card in card_list %}
     {% ifchanged %} 
         <h3>🗃️{{ card.box | ordinal }} Box</h3>
     {% endifchanged %}
-        <article>
-            {{ card }}
-        </article>
+        {% include "flashcards/card.html" %}
     {% endfor %} 
 {% endblock content %} 

@@ -2,11 +2,10 @@
 {% load humanize %} 
 
 {% block content %}
-    <h2> class='box-title'>🗃️ {{ box_number | ordinal }} Box</h2>
+    <h2 class='box-title'>🗃️ {{ box_number | ordinal }} Box</h2>
     <mark class ='box_number'>{{ object_list | length }}</mark> Card{{ object_list | pluralize }} left in box.
     <hr> 
     {% if check_card %}
-        {% include "cards/card.html" with card=check_card %}
+        {% include "flashcards/card.html" with card=check_card %}
     {% endif %}
-    {% endfor %} 
 {% endblock content %}

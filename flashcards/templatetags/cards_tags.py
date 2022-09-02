@@ -1,11 +1,10 @@
 from django import template
-
 from flashcards.models import BOXES, Card
 
 register = template.Library()
 
 
-@register.inclusion_tag('flashcards/box_links.html')
+@register.inclusion_tag('box_links.html')
 def boxes_as_links():
     boxes = []
     for box_num in BOXES:
