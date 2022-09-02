@@ -1,13 +1,26 @@
-from django.urls import reverse_lazy 
-from django.views.generic import (ListView, CreateView, UpdateView)
+from django.urls import reverse_lazy
+from django.views.generic import ListView, CreateView, UpdateView
+# from django.views.generic import CardListView
 from .models import Card
 
-# from django.shortcuts import render
+from django.shortcuts import render
+
+
+class BoxView(ListView):
+    template_name = 'flashcards/box.html'
+
+    def get_queryset(self):
+        return Card.objects.filter(box=self.kwargs['box_num'])
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['box_number'] = self.kwargs['box_num']
+        return context
 
 
 class CardListView(ListView):
     model = Card
-    queryset = Card.objects.all().order_by("box", "-date_created")
+    queryset = Card.objects.all().order_by('box', '-date_created')
 
 
 class CardCreateView(CreateView):
