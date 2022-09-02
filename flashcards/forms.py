@@ -1,19 +1,15 @@
-from django import forms
+# from django import forms
 from .models import Card
 
 
-class CardForm(forms.ModelForm):
+# class CardCheckForm(forms.Form):
+#     card_id = forms.IntegerField(required=True)
+#     solved = forms.BooleanField(required=False)
+
+
+# class CardForm(forms.ModelForm):
     class Meta:
         model = Card
         fields = (
             'name',
         )
-
-
-# class DeckForm(forms.ModelForm):
-#     class Meta:
-#         model = Deck
-#         fields = (
-#             'Tennis',
-#             'Music',
-#         )
