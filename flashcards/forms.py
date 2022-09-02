@@ -4,7 +4,7 @@ from .models import Card
 
 class CardForm(forms.ModelForm):
     class Meta:
-        model = Card 
+        model = Card
         fields = (
             'name',
         )
