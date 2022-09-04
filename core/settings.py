@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.humanize',
     'flashcards.apps.FlashcardsConfig',
+    # 'accounts'
 ]
 
 MIDDLEWARE = [
@@ -127,5 +128,6 @@ STATICFILES_DIR = [BASE_DIR / 'static']
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = 'flashcards.User'
+# AUTH_PROFILE_MODULE = 'accounts.UserProfile'
 # SIMPLE_BACKEND_REDIRECT_URL = 'flashcards/'
 # LOGIN_URL_REDIRECT = '/'

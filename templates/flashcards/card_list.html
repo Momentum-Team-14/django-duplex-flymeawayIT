@@ -3,10 +3,10 @@
 
 {% block content %} 
     <h2>
-        All Cards
+        Add Cards
     </h2>
     <a href='{% url "card-create" %}' role='button'>
-        Create New card
+        Create New Flashcard
     </a>
     {% for card in card_list %}
     {% ifchanged %} 
